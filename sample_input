@@ -1,0 +1,34 @@
+tasks = [
+    {
+        "name": "Finish CS32 design assignment",
+        "category": "class",
+        "due_in_days": 1,
+        "estimated_time": 2.0,
+        "difficulty": 3,
+        "importance": 5
+    },
+    {
+        "name": "Go grocery shopping",
+        "category": "errands",
+        "due_in_days": 3,
+        "estimated_time": 1.0,
+        "difficulty": 1,
+        "importance": 2
+    },
+    {
+        "name": "Study for midterm",
+        "category": "class",
+        "due_in_days": 2,
+        "estimated_time": 4.0,
+        "difficulty": 5,
+        "importance": 5
+    },
+    {
+        "name": "Workout",
+        "category": "exercise",
+        "due_in_days": 5,
+        "estimated_time": 1.0,
+        "difficulty": 2,
+        "importance": 3
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "Study for midterm": {
+        "name": "Study for midterm",
+        "category": "class",
+        "due_in_days": 2,
+        "estimated_time": 4.0,
+        "difficulty": 5,
+        "importance": 5,
+        "priority_score": 35.0
+    },
+    "Go grocery shopping": {
+        "name": "Go grocery shopping",
+        "category": "errands",
+        "due_in_days": 3,
+        "estimated_time": 1.0,
+        "difficulty": 1,
+        "importance": 2,
+        "priority_score": 18.0
+    }
+}
