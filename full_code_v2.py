@@ -441,14 +441,6 @@ def collect_preferences(load_existing: bool = True) -> dict:
         DAYS_OF_WEEK,
     )
 
-    print("\n  Category time-of-day preferences")
-    print("  (For each category, enter: morning / afternoon / evening / night / any)")
-    category_time_prefs = {}
-    for cat in CATEGORIES:
-        raw = input(f"  {cat}: ").strip().lower()
-        if raw in ("morning", "afternoon", "evening", "night"):
-            category_time_prefs[cat] = raw
-
     max_daily_hours = _prompt_float(
         "\n  Max hours of tasks to schedule per day (e.g. 4): ", 0.5, 16.0
     )
