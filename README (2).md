@@ -2,16 +2,12 @@
 ## Description
 *This project creates a smart to-do list program that helps users manage tasks by computing priority, organizing tasks by deadline and importance, and recommending what to do based on available time.*
 
-## How to Run
+## Before You Run
 1. Install dependencies:
    ```
    pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
    ```
 2. Place your Google OAuth credentials file in the project folder
-3. Run:
-   ```
-   python Find_time_slots.py
-   ```
 
 ## Components
 
