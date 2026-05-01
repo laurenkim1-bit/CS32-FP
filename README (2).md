@@ -19,7 +19,7 @@ The program uses the `input_one_task` function to collect the following for each
 - Importance: high, medium, or low
 - Estimated hours to complete
 
-The program validates all inputs before accepting them. Tasks are saved to `tasks.json` so they persist between runs — the user does not need to re-enter tasks every time they run the program.
+The program validates all inputs before accepting them, and sends error messages for invalid inputs. Tasks are saved to `tasks.json` so they persist between runs — the user does not need to re-enter tasks every time they run the program.
 
 **2) Sort tasks by priority**
 
