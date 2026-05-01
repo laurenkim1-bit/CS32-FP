@@ -11,6 +11,8 @@ Smart To-Do List Scheduler
 
 Requirements:
     pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+#delete this - cleanly removed category, difficulty, status
 """
 
 import os
