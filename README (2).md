@@ -32,13 +32,15 @@ Tasks are then sorted from highest to lowest priority score and displayed in the
 
 **3) Collect user preferences**
 
+Some users may prefer working on tasks within certain categories at particular times in the day, or doing tasks in a particular order. Users may be more productive in the morning (or at night), and prefer to do more difficult tasks during these times of higher productivity. Users might want to have certain days (e.g., weekends) be less busy. The program will use the collect_preferences function to collect this information and incorporate it into the proposed schedule.
+
 The `collect_preferences` function asks the user:
 - When they are most productive (morning, afternoon, evening, or night)
 - Whether they want high-importance tasks saved for their productive hours
 - Which days of the week they want to keep lighter
 - Maximum hours of tasks to schedule per day
 
-Preferences are saved to `preferences.json` and reloaded automatically on subsequent runs.
+Preferences are saved to `preferences.json` and can be reused or altered in subsequent runs.
 
 **4) Connect to Google Calendar and identify open time slots**
 
