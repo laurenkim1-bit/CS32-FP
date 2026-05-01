@@ -32,7 +32,7 @@ Tasks are then sorted from highest to lowest priority score and displayed in the
 
 **3) Collect user preferences**
 
- Users may have different preferences may be more productive in the morning (or at night), and prefer to do more difficult tasks during these times of higher productivity. Users might want to have certain days (e.g., weekends) be less busy. The program will use the collect_preferences function to collect this information and incorporate it into the proposed schedule.
+ Users may have different preferences when it comes to scheduling tasks. Users may be more productive in the morning (or at night), and prefer to do more difficult tasks during these times of higher productivity. Users might want to have certain days (e.g., weekends) be less busy. The program will use the collect_preferences function to collect this information and incorporate it into the proposed schedule.
 
 The `collect_preferences` function asks the user:
 - When they are most productive (morning, afternoon, evening, or night)
