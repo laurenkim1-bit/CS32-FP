@@ -44,7 +44,7 @@ Preferences are saved to `preferences.json` and can be reused or altered in subs
 
 **4) Connect to Google Calendar and identify open time slots**
 
-Authentication is handled via an OAuth 2.0 Client ID created in Google Cloud Console. When the program runs, it prints an authorization URL in the terminal. The user follows the link, signs in with Google, copies the authorization code, and pastes it back into the terminal. The program then pulls events from the user's primary Google Calendar and uses the `find_free_slots` function to infer free time gaps of at least 30 minutes across the next 7 days.
+Authentication is handled via an OAuth 2.0 Client ID created in Google Cloud Console. When the program runs, it prints an authorization URL in the terminal. The user follows the link, signs in with Google, copies the authorization code, and pastes it back into the terminal. The program can then pull events from the user's Google Calendar and uses the `find_free_slots` function to infer free time gaps of at least 30 minutes across the next 7 days.
 
 **5) Suggest tasks to complete during open time slots**
 
