@@ -388,7 +388,7 @@ def collect_preferences(load_existing: bool = True) -> dict:
     if load_existing and os.path.exists(PREFERENCES_FILE):
         prefs = _load_preferences()
         print(f"\n⚙️   Loaded existing preferences from {PREFERENCES_FILE}.")
-        if input("  Update preferences? (y/N): ").strip().lower() != "y":
+        if input("  Update preferences? (Y/N): ").strip().lower() != "y":
             return prefs
 
     print("\n╔══════════════════════════════════════════╗")
