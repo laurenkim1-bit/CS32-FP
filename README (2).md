@@ -23,10 +23,10 @@ The program validates all inputs before accepting them, and sends error messages
 
 **2) Sort tasks by priority**
 
-The `compute_priority` function calculates a priority score (0.0–1.0) for each task as a weighted sum:
+The `compute_priority` function calculates a "priority score" (0.0–1.0) for each task based on estimated time, deadline imminence, difficulty, and importance. This looks like a weighted sum of each of those factors:
 - 0.50 — deadline imminence (due today = 1.0, due in 30+ days = 0.0)
 - 0.40 — importance (high = 1.0, medium = 0.5, low = 0.0)
-- 0.10 — quick-win bias (shorter tasks get a small boost)
+- 0.10 — quick-win bias (i.e., if the task is short and can be knocked-out quickly)
 
 Tasks are then sorted from highest to lowest priority score and displayed in the terminal.
 
