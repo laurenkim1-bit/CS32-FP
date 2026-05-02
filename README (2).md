@@ -57,7 +57,7 @@ The scheduler runs two passes per task: first trying to find a slot that matches
 
 **6) Output a proposed weekly schedule**
 
-The `print_week_view` function prints a unified day-by-day schedule combining pre-existing events from the user's Google Calendar events, tasks (with a short rationale for why each was placed there), and remaining free time.
+The `print_week_view` function prints a day-by-day schedule combining pre-existing events from the user's Google Calendar, tasks (with a short explanation for why the task was placed there), and remaining free time.
 
 ## Motivation
 The goal of this program is to help users, including busy college students, organize their to-do lists and complete all tasks in a productive and efficient manner.
