@@ -57,13 +57,10 @@ The scheduler runs two passes per task: first trying to find a slot that matches
 
 **6) Output a proposed weekly schedule**
 
-The `print_week_view` function prints a unified day-by-day schedule combining:
-- 📅 Pre-existing Google Calendar events
-- 📝 Scheduled tasks (with a short explanation of why each was placed there, e.g. "matches your productive hours")
-- 🕓 Remaining free time
+The `print_week_view` function prints a unified day-by-day schedule combining pre-existing events from the user's Google Calendar events, tasks (with a short rationale for why each was placed there), and remaining free time.
 
 ## Motivation
-The goal of this program is to help users — including busy college students — organize their to-do lists and complete all tasks in a productive and efficient manner.
+The goal of this program is to help users, including busy college students, organize their to-do lists and complete all tasks in a productive and efficient manner.
 
 ## External Contributors
 I used Claude to help write the code for this project. I prompted it to write the Google Calendar authentication and event-fetching logic, explaining what it would be used for. I then asked it to help gather user task inputs, specifying what details to collect and that inputs should be validated before being used in the priority score formula. I asked it to help design a weighted priority score formula and return a ranked task list. I also used Claude to build the user preferences collection and to integrate the calendar data, tasks, and preferences into a unified weekly schedule output. Along the way I used Claude to debug OAuth authentication errors encountered when running in a GitHub Codespaces environment.
