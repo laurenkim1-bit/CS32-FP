@@ -1,6 +1,4 @@
 """
-Find_time_slots.py
-
 Smart To-Do List Scheduler
   1. Authenticate with Google Calendar
   2. Fetch calendar events + find free slots
@@ -12,7 +10,6 @@ Smart To-Do List Scheduler
 Requirements:
     pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
-#delete this - cleanly removed category, difficulty, status
 """
 
 import os
@@ -32,7 +29,7 @@ from googleapiclient.discovery import build
 # Configuration
 # ---------------------------------------------------------------------------
 
-CREDENTIALS_FILE = "client_secret_65549107392-it02m633qlt6irk23jt6np1rj24te994.apps.googleusercontent.com.json"
+CREDENTIALS_FILE = "client_secret_65549107392-c4gh7knmm2pf9fn74ulv6cllfttq6qit.apps.googleusercontent.com.json"
 SCOPES           = ["https://www.googleapis.com/auth/calendar.readonly"]
 TOKEN_FILE       = "token.json"
 TASKS_FILE       = "tasks.json"
