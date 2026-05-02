@@ -15,24 +15,24 @@
 
 The program uses the `input_one_task` function to collect the following for each task:
 - Task name
-- Days until due (e.g. type `3` for a task due in 3 days)
+- Days until due (e.g. type '3' for a task due in 3 days)
 - Importance: high, medium, or low
 - Estimated hours to complete
 
-The program validates all inputs before accepting them, and sends error messages for invalid inputs. Tasks are saved to `tasks.json` so that the user does not need to re-enter tasks every time they run the program.
+The program validates all inputs before accepting them, sending error messages for invalid inputs. Tasks are saved to `tasks.json` so that the user does not need to re-enter tasks every time they run the program.
 
 **2) Sort tasks by priority**
 
 The `compute_priority` function calculates a "priority score" (0.0–1.0) for each task based on estimated time, deadline imminence, difficulty, and importance. This looks like a weighted sum of each of those factors:
-- 0.50 — deadline imminence (due today = 1.0, due in 30+ days = 0.0)
-- 0.40 — importance (high = 1.0, medium = 0.5, low = 0.0)
-- 0.10 — quick-win bias (i.e., if the task is short and can be knocked-out quickly)
+- 0.50: deadline imminence (due today = 1.0, due in 30+ days = 0.0)
+- 0.40: importance (high = 1.0, medium = 0.5, low = 0.0)
+- 0.10: quick-win bias (i.e., if the task is short and can be knocked-out quickly; a tie-breaker factor)
 
 Tasks are then sorted from highest to lowest priority score and displayed in the terminal.
 
 **3) Collect user preferences**
 
- Users may have different preferences when it comes to scheduling tasks. Users may be more productive in the morning (or at night), and prefer to do more difficult tasks during these times of higher productivity. Users might want to have certain days (e.g., weekends) be less busy. The program will use the collect_preferences function to collect this information and incorporate it into the proposed schedule.
+ Users may have different preferences when it comes to scheduling tasks. Some may be more productive in the morning (or at night), and prefer to do more difficult tasks during these times of higher productivity. Users might want to have certain days (e.g., weekends) be less busy. The program will use the collect_preferences function to collect this information and incorporate it into the proposed schedule.
 
 The `collect_preferences` function asks the user:
 - When they are most productive (morning, afternoon, evening, or night)
